@@ -1,9 +1,3 @@
-<!-- 
-Theme Name: Build Me a Site
-Author: Zane Mountcastle
-Version: 1.0 
- -->
-
 <?php get_header(); ?>
 
 <div class="menu">
@@ -16,8 +10,18 @@ Version: 1.0
 	  <li><a href = "#FAQ">FAQ</a></li>
 	  <li><a href = "#quote_form">contact us</a></li>
 	</ul>
-	<div class="quote_button">
+	<div id="quote_button">
 		<a href = "#quote_form">get a quote</a>
+	</div>
+	<div id="menu_footer">
+	<p>	
+		Build Me A Site, Ltd. <br>
+		Unit 9 Imperial Studios <br>
+		3-7 Imperial Road, Fulham <br>
+		London, SW6 2AG <br>
+		United Kingdom <br>
+	</p>
+	<img src="http://localhost:8888/wp-content/uploads/2016/03/small_menu_logo-1.png">
 	</div>
 
 </div>
@@ -34,7 +38,7 @@ Version: 1.0
 	</div>
 
 	<div id = "about_us">
-			<h1 class="section_title"> <?php the_field("What_We_Do_Title"); ?> </h1>
+			<h1 id="section_title"> <?php the_field("What_We_Do_Title"); ?> </h1>
 			
 			<img class="about_us_main" src="http://localhost:8888/wp-content/uploads/2016/03/build_me_a_site_logo_icon_black.png">
 			<div class="snippet"> <?php the_field("snippet"); ?> </div>
@@ -60,20 +64,19 @@ Version: 1.0
 
 					endif;
 				?> 
-			</div>
 	</div>
 
 	<div id = "portfolio">
-		<h1 class = "section_title">some past work</h1>
+		<h1 id = "section_title">some past work</h1>
 	</div>
 
 	<div id = "FAQ">
-		<div class="section_title"> <?php the_field("FAQ_Title"); ?> </div>
-		<div class="content"> <?php the_field("content") ?> </div>
+		<div id="section_title"> <?php the_field("FAQ_Title"); ?> </div>
+		<div class="questions"> <?php the_field("content") ?> </div>
 	</div>
 
 	<div id = "quote_form">
-		<h1 class = "section_title">get a quote</h1>
+		<h1 id = "section_title">get a quote</h1>
 	</div>
 
 

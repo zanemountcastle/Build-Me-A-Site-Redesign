@@ -50,7 +50,26 @@ a:link, a:visited{
     display: block;
 }
 
-.quote_button{
+#menu_footer{
+    font-weight: 300;
+    font-size: 8pt;
+    color: #888;
+    display: block;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    bottom: 40px;
+    left:85px;
+}
+
+#menu_footer img{
+    padding-top: 7px;
+    width: 34px;
+    height: 34px;
+    margin: auto;
+}
+
+#quote_button{
     display: block; 
     width: 35%; 
     margin: 0 auto ;
@@ -68,8 +87,8 @@ a:link, a:visited{
 
 .content {
     width: 60%;
-    margin-left: 400px;
-    margin-right: 5%;
+    margin-left: 30%;
+    margin-right: 15%;
     height: auto;
     right: 0;
     background: #fff;
@@ -92,6 +111,8 @@ a:link, a:visited{
 
 #splash{
     margin-bottom: 30%;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 15%;
     text-align: center;
     font-weight: 500;
@@ -111,11 +132,14 @@ a:link, a:visited{
 
 #about_us{
     padding-top: 7%;
+    width: 90%;
+    margin: auto;
 }
 
 #about_us img{
     height: 60px;
     width: 60px;
+    margin: auto;
    /* display: block;
     align: center;*/
 }
@@ -130,12 +154,17 @@ a:link, a:visited{
     padding-right: 4.5%;
 }
 
-.section_title{
+#about_us .section img{
+    margin: auto;
+    align: center;
+}
+
+#section_title{
     font-size: 24pt;
     font-weight: 500;
     color: #FF606E;
-    margin-left: normal;
     text-align: center;
+    margin: 0 auto;
 }
 
 #about_us h2{
@@ -154,8 +183,14 @@ a:link, a:visited{
 }
 
 #FAQ{
+    width: 90%;
     padding-top: 7%;
-    margin-right: 15%;
+    margin: auto;
+}
+
+#questions{
+    display: block;
+    align: center;
 }
 
 #quote_form{
