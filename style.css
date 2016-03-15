@@ -29,6 +29,12 @@ a:link, a:visited{
     text-align: center;
 }
 
+a:hover{
+    color: #c20010;
+    text-decoration: none;
+    text-align: center;
+}
+
 .menu {
     width: 300px;
     height: 100%;
@@ -82,8 +88,6 @@ a:link, a:visited{
     text-decoration:none;
     text-align:center;
 }
-
-
 
 .content {
     width: 60%;

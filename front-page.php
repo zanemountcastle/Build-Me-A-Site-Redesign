@@ -14,14 +14,14 @@
 		<a href = "#quote_form">get a quote</a>
 	</div>
 	<div id="menu_footer">
-	<p>	
-		Build Me A Site, Ltd. <br>
-		Unit 9 Imperial Studios <br>
-		3-7 Imperial Road, Fulham <br>
-		London, SW6 2AG <br>
-		United Kingdom <br>
-	</p>
-	<img src="http://localhost:8888/wp-content/uploads/2016/03/small_menu_logo-1.png">
+		<p>	
+			Build Me A Site, Ltd. <br>
+			Unit 9 Imperial Studios <br>
+			3-7 Imperial Road, Fulham <br>
+			London, SW6 2AG <br>
+			United Kingdom <br>
+		</p>
+		<img src="http://localhost:8888/wp-content/uploads/2016/03/small_menu_logo-1.png">
 	</div>
 
 </div>
