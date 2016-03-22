@@ -31,11 +31,12 @@
 		while(have_posts()) : the_post();
 		endwhile; 
 	?>
-
-	<div id="splash">
-		<img src="http://localhost:8888/wp-content/uploads/2016/03/computer_illustration.png">
-		<?php the_title();?>
-		<?php the_content();?>
+	<div id = "slash_wrapper">
+		<div id="splash">
+			<img src="http://localhost:8888/wp-content/uploads/2016/03/computer_illustration.png">
+			<?php the_title();?>
+			<?php the_content();?>
+		</div>
 	</div>
 
 	<div id = "about_us">
@@ -54,7 +55,7 @@
 							$img = get_sub_field("image");
 				?>
 							<div class="container">
-								<img src="<?php echo $img['url']; ?>">
+								<img src= "<?php echo $img['url']; ?>">
 								<h2><?php the_sub_field("title"); ?></h2>
 								<p><?php the_sub_field("content"); ?></p>
 							</div>
@@ -72,6 +73,34 @@
 
 	<div id = "portfolio">
 		<h1 id = "section_title">some past work</h1>
+
+		<?php 
+			$args = array(
+					"post_type" => "post",
+					"numberposts" => -1
+				);
+
+			$the_query = new WP_Query( $args );
+
+			if ( $the_query->have_posts() ) : 
+				while ( $the_query->have_posts() ) : $the_query->the_post(); 
+		?>
+					<div class = "container">
+						<h2><?php the_title(); ?></h2>
+						<p> <?php the_content(); ?> </p>
+						<img src = "<?php the_post_thumbnail(); ?> " >
+					</div>
+		<?php 	
+				endwhile;
+
+			else : 
+		?>
+				<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+		<?php
+			wp_reset_postdata(); 
+			endif;
+		?>
+
 	</div>
 
 	<div id = "FAQ">

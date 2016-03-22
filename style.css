@@ -1,9 +1,3 @@
-/*
-Theme Name: Build Me a Site
-Author: Zane Mountcastle
-Version: 1.0 
-*/
-
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -124,13 +118,11 @@ a:hover{
 }
 
 #splash{
-    margin-bottom: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 15%;
+    min-height: 85vh;
+    padding-top:15vh;
     text-align: center;
     font-weight: 500;
-    font-size: 2.7em;
+    font-size: 30pt;
     color: #00DDD8;
 }
 
@@ -147,9 +139,6 @@ a:hover{
     padding-top: 7%;
     width: 90%;
     margin: auto;
-}
-
-.about_us_head{
 }
 
 .about_us_head img {
@@ -200,8 +189,13 @@ a:hover{
 
 #portfolio{
     padding-top: 7%;
-    clear: left;
+    width: 100%;
     /* add in after importing via Wordpress*/
+}
+
+#portfolio .container img{
+	width: 35%;
+	height: auto;
 }
 
 #FAQ{
