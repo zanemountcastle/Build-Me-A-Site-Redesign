@@ -90,14 +90,15 @@ a:hover{
 }
 
 .content {
-    width: 60%;
-    margin-left: 30%;
-    margin-right: 15%;
+    width: auto;
+    margin-left: 350px;
+    margin-right: 50px;
     height: auto;
-    right: 0;
     background: #fff;
     color: black;
     display: inline-block;
+    padding-left: 5%
+    padding-right: 5%;
 }
 
 .footer{
@@ -111,6 +112,15 @@ a:hover{
     font-weight: 300;
     font-size: 8pt;
     color: #888;
+}
+
+#section_title{
+    font-size: 24pt;
+    font-weight: 500;
+    color: #FF606E;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 #splash{
@@ -133,63 +143,72 @@ a:hover{
     display: block;
 }
 
-
 #about_us{
     padding-top: 7%;
     width: 90%;
     margin: auto;
 }
 
-#about_us_main_img img {
-    width: 10px;
+.about_us_head{
+}
+
+.about_us_head img {
+    width: 37%;
     height: auto;
+    float:left;
+    padding-right: 5%;
 }
 
-.snippet img{
-    height: 200px;
-    width: 60px;
-    margin: auto;
-   /* display: block;
-    align: center;*/
+.about_us_head p{
+	font-size: 15pt;
+	margin-top: 0;
+	margin-bottom: 25px;
 }
 
-.about_us_section{
-    display: inline-block;
-    padding-right: 4.5%;
-}
-
-.about_us_section img{
-    margin: auto;
-    align: center;
-}
-
-#section_title{
-    font-size: 24pt;
-    font-weight: 500;
-    color: #FF606E;
+.about_us_body{
+    clear: left;
+    width: 100%;
+    padding-top: 25px;
     text-align: center;
-    margin: 0 auto;
 }
 
-#about_us h2{
-    font-size: 14pt;
+.about_us_body img{
+    margin: 0 auto;
+    width: 40%;
+    height: auto;
+    display: block;
+    /*align: center;*/
+}
+
+.about_us_body h2{
+    font-size: 15pt;
     font-weight: 500;
     color: #517398;
+    text-align: left;
 }
 
-#about_us p{
-    font-size: 10pt;
+.about_us_body p{
+    font-size: 12pt;
+    text-align: left;
+}
+
+.about_us_body .container{
+	display: inline-block;
+	margin: 0 auto;
+	padding: 2.5%;
 }
 
 #portfolio{
     padding-top: 7%;
-    /* add in after importing dynamically via Wordpress*/
+    clear: left;
+    /* add in after importing via Wordpress*/
 }
 
 #FAQ{
-    width: 90%;
+    width: 70%;
     padding-top: 7%;
     margin: auto;
+    font-size: 15pt;
 }
 
 #questions{
