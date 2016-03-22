@@ -140,25 +140,25 @@ a:hover{
     margin: auto;
 }
 
-#about_us img{
-    height: 60px;
+#about_us_main_img img {
+    width: 10px;
+    height: auto;
+}
+
+.snippet img{
+    height: 200px;
     width: 60px;
     margin: auto;
    /* display: block;
     align: center;*/
 }
 
-#about_us_main img{
-    width: auto;
-    height: 50%;
-}
-
-#about_us .section{
+.about_us_section{
     display: inline-block;
     padding-right: 4.5%;
 }
 
-#about_us .section img{
+.about_us_section img{
     margin: auto;
     align: center;
 }

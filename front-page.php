@@ -23,7 +23,6 @@
 		</p>
 		<img src="http://localhost:8888/wp-content/uploads/2016/03/small_menu_logo-1.png">
 	</div>
-
 </div>
 
 <div class="content">	
@@ -38,25 +37,23 @@
 	</div>
 
 	<div id = "about_us">
-			<h1 id="section_title"> <?php the_field("What_We_Do_Title"); ?> </h1>
-			
-			<img class="about_us_main" src="http://localhost:8888/wp-content/uploads/2016/03/build_me_a_site_logo_icon_black.png">
+			<h1 id="section_title"> <?php the_field("What_We_Do_Title"); ?> </h1>	
+			<img id="about_us_main_img" src="http://localhost:8888/wp-content/uploads/2016/03/build_me_a_site_logo_icon_black.png">
 			<div class="snippet"> <?php the_field("snippet"); ?> </div>
 				<?php
 					// check if the repeater field has rows of data
 					if( have_rows('what_we_do') ):
-
 					 	// loop through the rows of data
 					    while ( have_rows('what_we_do') ) : the_row(); 
 							$img = get_sub_field("image");
 				?>
-							<div class="section">
+							<div class="about_us_section">
 									<img src="<?php echo $img['url']; ?>">
 									<h2><?php the_sub_field("title"); ?></h2>
 									<p><?php the_sub_field("content"); ?></p>
 							</div>
 				<?php
-						
+
 						endwhile;
 
 					else :
