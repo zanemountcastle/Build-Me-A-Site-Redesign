@@ -114,7 +114,11 @@ a:hover{
     color: #FF606E;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 2px;
+    margin-bottom: 40px;
+    display: inline;
+    border-bottom: 5px solid #00DDD8;
 }
 
 #splash{
@@ -174,6 +178,9 @@ a:hover{
     font-weight: 500;
     color: #517398;
     text-align: left;
+    padding-bottom: 2px; 
+    text-decoration: none;
+    border-bottom: 3px solid #FF606E;
 }
 
 .about_us_body p{
@@ -190,6 +197,7 @@ a:hover{
 #portfolio{
     padding-top: 7%;
     width: 100%;
+    text-align: center;
 }
 
 #portfolio .container{
@@ -199,8 +207,13 @@ a:hover{
     margin: 0 auto;
 }
 
-#portfolio p h2{
+#portfolio p{
     text-align: left;
+}
+
+#portfolio h2{
+    text-align: left;
+    color: #262c3a;
 }
 
 #portfolio .container #thumbnail {
@@ -210,19 +223,38 @@ a:hover{
     padding-right: 10%;
 }
 
+
 #FAQ{
     width: 70%;
     padding-top: 7%;
     margin: auto;
     font-size: 15pt;
+    text-align: center;
+}
+
+#FAQ p{
+    text-align: left;
 }
 
 #questions{
     display: block;
-    align: center;
+
 }
 
 #quote_form{
+    margin: 0 auto;
+    margin-bottom: 40px;
     padding-top: 7%;
+    text-align: center;
     /* add in after quote form is developed */
 }
+
+#quote_form h1{
+    margin-bottom: 40px;
+}
+
+
+
+
+
+

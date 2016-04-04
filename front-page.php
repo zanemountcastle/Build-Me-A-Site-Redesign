@@ -31,7 +31,7 @@
 		while(have_posts()) : the_post();
 		endwhile; 
 	?>
-	<div id = "slash_wrapper">
+	<div id = "splash_wrapper">
 		<div id="splash">
 			<img src="http://localhost:8888/wp-content/uploads/2016/03/computer_illustration.png">
 			<?php the_title();?>
@@ -91,8 +91,10 @@
 								<?php the_post_thumbnail(); ?> 
 							</a>
 						</div>
-						<h2> <?php the_title(); ?> </h2>
-						<p> <?php the_content(); ?> </p>
+						<div class="post_content">
+							<h2> <?php the_title(); ?> </h2>
+							<p> <?php the_content(); ?> </p>
+						</div>
 					</div>
 		<?php 	
 				endwhile;
@@ -104,16 +106,24 @@
 			wp_reset_postdata(); 
 			endif;
 		?>
-
 	</div>
 
 	<div id = "FAQ">
-		<div id="section_title"> <?php the_field("FAQ_Title"); ?> </div>
-		<div class="questions"> <?php the_field("content") ?> </div>
+		<?php 	
+			while(have_posts()) : the_post();
+		?>
+		<h1 id = "section_title"><?php the_field("FAQ_Title") ?></h1>
+		<div class="questions"> <?php the_field("content"); ?> </div>
+		<?php
+			endwhile; 
+		?>
 	</div>
 
+	<!-- modified from CodyHouse Responsive Newsletter Form
+	https://codyhouse.co/gem/responsive-newsletter-form/ -->
 	<div id = "quote_form">
 		<h1 id = "section_title">get a quote</h1>
+		
 	</div>
 
 </div>
@@ -121,3 +131,20 @@
 </body>
 
 <?php get_footer(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
