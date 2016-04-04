@@ -190,12 +190,24 @@ a:hover{
 #portfolio{
     padding-top: 7%;
     width: 100%;
-    /* add in after importing via Wordpress*/
 }
 
-#portfolio .container img{
-	width: 35%;
+#portfolio .container{
+    width: 80%;
+    display: inline-block;
+    padding: 2.5%;
+    margin: 0 auto;
+}
+
+#portfolio p h2{
+    text-align: left;
+}
+
+#portfolio .container #thumbnail {
+	width: 450px; /* fixed width of post image */
 	height: auto;
+    float: left;
+    padding-right: 10%;
 }
 
 #FAQ{

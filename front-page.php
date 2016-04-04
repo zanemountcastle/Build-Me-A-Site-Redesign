@@ -86,9 +86,13 @@
 				while ( $the_query->have_posts() ) : $the_query->the_post(); 
 		?>
 					<div class = "container">
-						<h2><?php the_title(); ?></h2>
+						<div id="thumbnail"> 
+							<a href="<?php echo get_field("portfolio_link"); ?>" target="_blank">
+								<?php the_post_thumbnail(); ?> 
+							</a>
+						</div>
+						<h2> <?php the_title(); ?> </h2>
 						<p> <?php the_content(); ?> </p>
-						<img src = "<?php the_post_thumbnail(); ?> " >
 					</div>
 		<?php 	
 				endwhile;
@@ -111,7 +115,6 @@
 	<div id = "quote_form">
 		<h1 id = "section_title">get a quote</h1>
 	</div>
-
 
 </div>
 	
