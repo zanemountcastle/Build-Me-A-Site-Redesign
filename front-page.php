@@ -4,12 +4,14 @@
 	<a href="#splash">
 		<img src="http://localhost:8888/wp-content/uploads/2016/03/build_me_a_site_logo_main.png">
 	</a>
-	<ul>
-	  <li><a href = "#about_us">about us</a></li>
-	  <li><a href = "#portfolio">portfolio</a></li>
-	  <li><a href = "#FAQ">FAQ</a></li>
-	  <!-- <li><a href = "#quote_form">contact us</a></li> -->
-	</ul>
+	<div class="buttons">
+		<ul>
+		  <li><a href = "#about_us">about us</a></li>
+		  <li><a href = "#portfolio">portfolio</a></li>
+		  <li><a href = "#FAQ">FAQ</a></li>
+		  <!-- <li><a href = "#quote_form">contact us</a></li> -->
+		</ul>
+	</div>
 	<div id="quote_button">
 		<a href = "#quote_form">get a quote</a>
 	</div>
@@ -55,8 +57,10 @@
 				?>
 							<div class="container">
 								<img src= "<?php echo $img['url']; ?>">
-								<h2><?php the_sub_field("title"); ?></h2>
-								<p><?php the_sub_field("content"); ?></p>
+								<div class="text">
+									<h2><?php the_sub_field("title"); ?></h2>
+									<p><?php the_sub_field("content"); ?></p>
+								</div>
 							</div>
 				<?php
 
