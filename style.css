@@ -1,6 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
 
 ul {
@@ -28,7 +29,7 @@ a:hover{
     text-decoration: none;
     text-align: center;
 }
-
+   
 .menu {
     width: 300px;
     height: 100%;
@@ -37,7 +38,7 @@ a:hover{
     bottom: 0px;
     left: 0px;
     background-color: #262c3a;
-    align:center;
+    align: center;
 } 
 
 .menu img {
@@ -55,7 +56,7 @@ a:hover{
     font-size: 8pt;
     color: #888;
     display: block;
-    margin: auto;
+    margin-top: 50%;
     position: absolute;
     text-align: center;
     bottom: 40px;
@@ -69,11 +70,13 @@ a:hover{
     margin: auto;
 }
 
+
+
 #quote_button{
     display: block; 
     width: 35%; 
     margin: 0 auto ;
-    margin-top: 38px;
+    margin-top: 70px;
     position: relative;
     font-size: 14pt;
     font-weight: bold;
@@ -85,6 +88,8 @@ a:hover{
 
 .content {
     width: auto;
+    min-width: 900px;
+    max-width: 1000px;
     margin-left: 350px;
     margin-right: 50px;
     height: auto;
@@ -98,7 +103,8 @@ a:hover{
 .footer{
     background-color: #262c3a;
     width: 100%-300px;
-    margin-left: 300px;
+    float: i/*
+    margin-left: 300px;*/
     height: auto;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -113,10 +119,7 @@ a:hover{
     font-weight: 500;
     color: #FF606E;
     text-align: center;
-    margin: 0 auto;
-    margin-bottom: 30px;
     padding-bottom: 2px;
-    margin-bottom: 40px;
     display: inline;
     border-bottom: 5px solid #00DDD8;
 }
@@ -213,7 +216,8 @@ a:hover{
 
 #portfolio h2{
     text-align: left;
-    color: #262c3a;
+    color: #517398;
+    margin-top: 5%;
 }
 
 #portfolio .container #thumbnail {
@@ -246,15 +250,116 @@ a:hover{
     margin-bottom: 40px;
     padding-top: 7%;
     text-align: center;
-    /* add in after quote form is developed */
 }
 
 #quote_form h1{
     margin-bottom: 40px;
 }
 
+#quote_form p{
+    padding-bottom: 5px;
+}
+
+.wpcf7 {
+  width: 90%;
+  max-width: 600px;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.wpcf7 li{
+	display: inline-block;
+	position: relative;
+	user-select: none;
+	margin: 0 26px 16px 0;
+	float: left;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea{
+	width: 100%;
+	font-size: 1.1rem;
+	font-weight: 300;
+	text-align: left;
+	padding: 10px;
+}
+
+.wpcf7 textarea {
+  min-height: 200px;
+  resize: vertical;
+  overflow: auto;
+}
+
+.wpcf7 input[type="submit"] {
+  border: 6px solid black;
+  background: #fff;
+  padding: 16px 20px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  appearance: none;
+}
+
+.wpcf7 .submit{
+	font-size: 1.4rem;
+	display: block;
+	margin: 0 auto;
+}
+
+/*.wpcf7 input[type="checkbox"],
+.wpcf7 input[type="radio"]{
+	display: none;
+}*/
+
+.wpcf7 span.wpcf7-list-item{
+	display: block;
+	content: '';
+	position: relative;
+	font-size: 1.1rem;
+	font-weight: 300;
+}
+
+.wpcf7 input[type="radio"],
+.wpcf7 input[type="checkbox"]{
+  left: 0;
+  top: 50%;
+  margin-top: -8px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid;
+}
+
+.is-active {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -200%, 0);
+  -moz-transform: translate3d(0, -200%, 0);
+  -ms-transform: translate3d(0, -200%, 0);
+  -o-transform: translate3d(0, -200%, 0);
+  transform: translate3d(0, -200%, 0);
+}
+
+.is-active {
+  height: 50%;
+}
+
+.is-active .submit {
+  display: block;
+  -webkit-animation: cd-bounce-in ease-out 0.4s;
+  -moz-animation: cd-bounce-in ease-out 0.4s;
+  animation: cd-bounce-in ease-out 0.4s;
+}
 
 
+@media (max-width: 1200px){    
+	.menu{
+		display: none;
+	}
 
-
-
+	.content{
+		display: block;
+		margin: 0 auto;
+	}
+}

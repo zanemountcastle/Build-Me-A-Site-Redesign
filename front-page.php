@@ -8,7 +8,7 @@
 	  <li><a href = "#about_us">about us</a></li>
 	  <li><a href = "#portfolio">portfolio</a></li>
 	  <li><a href = "#FAQ">FAQ</a></li>
-	  <li><a href = "#quote_form">contact us</a></li>
+	  <!-- <li><a href = "#quote_form">contact us</a></li> -->
 	</ul>
 	<div id="quote_button">
 		<a href = "#quote_form">get a quote</a>
@@ -35,7 +35,6 @@
 		<div id="splash">
 			<img src="http://localhost:8888/wp-content/uploads/2016/03/computer_illustration.png">
 			<?php the_title();?>
-			<?php the_content();?>
 		</div>
 	</div>
 
@@ -87,8 +86,13 @@
 		?>
 					<div class = "container">
 						<div id="thumbnail"> 
-							<a href="<?php echo get_field("portfolio_link"); ?>" target="_blank">
-								<?php the_post_thumbnail(); ?> 
+							
+							<a href="<?php echo get_field("portfolio_link"); ?>" height="450" width="281"target="_blank">
+								<?php 
+								//automatically resize tumbnail to 450x281
+							add_image_size('portfolio_thumbnail_size', 450, 281, true);
+							the_post_thumbnail('portfolio_thumbnail_size')
+							?>
 							</a>
 						</div>
 						<div class="post_content">
@@ -119,11 +123,17 @@
 		?>
 	</div>
 
-	<!-- modified from CodyHouse Responsive Newsletter Form
-	https://codyhouse.co/gem/responsive-newsletter-form/ -->
 	<div id = "quote_form">
 		<h1 id = "section_title">get a quote</h1>
-		
+		<?php 	
+			while(have_posts()) : the_post();
+		?>
+
+		<div class="contact_form"> <?php the_content();?> </div>
+
+		<?php
+			endwhile; 
+		?>
 	</div>
 
 </div>
