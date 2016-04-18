@@ -10,11 +10,14 @@
 		  <li><a href = "#portfolio">portfolio</a></li>
 		  <li><a href = "#FAQ">FAQ</a></li>
 		  <!-- <li><a href = "#quote_form">contact us</a></li> -->
+		  <li class="get_a_quote"><a href="#quote_form">get a quote</a>
 		</ul>
 	</div>
+	
 	<div id="quote_button">
 		<a href = "#quote_form">get a quote</a>
 	</div>
+
 	<div id="menu_footer">
 		<p>	
 			Build Me A Site, Ltd. <br>

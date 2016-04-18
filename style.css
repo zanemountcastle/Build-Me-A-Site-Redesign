@@ -41,6 +41,10 @@ a:hover{
     align: center;
 } 
 
+.menu .get_a_quote{
+    	display: none;
+    }
+
 .menu img {
     height: 120px;
     width: auto;
@@ -372,36 +376,41 @@ a:hover{
 
     .menu{
         width: 100%;
+        min-width: 650px;
         height: 120px;
-        top: 0px;
-        bottom: 0px;
-        left: 0px;
         background-color: #262c3a;
         position: fixed;
         z-index: 150;
-        display: inline-block;
+        list-style: none;
+    }
+
+    .menu .buttons{
+    	width: 450px;
+    	display: table;
+    	margin: 20px;
+    	margin-left: auto;
+    	margin-right: auto;
+    	padding-right: 100px;
     }
 
     .menu img{
-        height: 80px;
-        width: auto;
+        height: auto;
+        width: 150px;
         margin-left: 50px;
         margin-right: auto;
         margin-top: 20px;
         margin-bottom: 20px;
         display: inline;
         float: left;
+        position: relative;
     }
 
     #quote_button{
-        display: inline-block;
-        float: right;
-        width: 100px;
-        margin-right: 70px;
-        margin-left: auto;
-        margin-top: 35px;
-        margin-bottom: 35px;
-        display: inline;
+        display: none;
+    }
+
+    .menu .get_a_quote{
+    	display: inherit;
     }
 
     .content{
@@ -410,6 +419,15 @@ a:hover{
 
     #menu_footer{
         display: none;
+    }
+
+    #about_us, #FAQ, #portfolio, #quote_form{
+    	padding-top: 15%;
+    }
+
+    #splash{
+    	margin-top: -100px;
+    	padding-top: 20%;
     }
 }
 
@@ -420,10 +438,11 @@ a:hover{
 	}
 }
 
-@media  (max-width: 999px){
+@media (max-width: 999px){
     .content{
         display: block;
         margin: 0;
+        margin-top: 100px;
         padding: 0;
         min-width: none;
     }
@@ -439,13 +458,6 @@ a:hover{
         padding-left: 0;
         margin-left: 0;
         margin-right: 0;
-    }
-
-    .about_us_body img{
-        /*width: 150px;
-        float: left;
-        padding-top: 35px;*/
-        display: none;
     }
 
     .about_us_body .text{
@@ -487,6 +499,13 @@ a:hover{
         max-width: 300px;
         margin: 0 auto;
     }
+}
+
+@media (max-width: 750px){
+	.menu .buttons{
+		position: absolute;
+		margin-left: 250px;
+	}
 }
 
 @media (max-height: 650px){
