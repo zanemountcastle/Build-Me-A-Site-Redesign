@@ -8,6 +8,7 @@ Version: 1.0
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Build Me A Site</title>
 		<?php wp_head(); ?>
 

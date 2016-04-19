@@ -9,7 +9,7 @@
 		  <li><a href = "#about_us">about us</a></li>
 		  <li><a href = "#portfolio">portfolio</a></li>
 		  <li><a href = "#FAQ">FAQ</a></li>
-		  <!-- <li><a href = "#quote_form">contact us</a></li> -->
+		  <!-- hidden until screen width = 1000px -->
 		  <li class="get_a_quote"><a href="#quote_form">get a quote</a>
 		</ul>
 	</div>
@@ -20,11 +20,8 @@
 
 	<div id="menu_footer">
 		<p>	
-			Build Me A Site, Ltd. <br>
-			Unit 9 Imperial Studios <br>
-			3-7 Imperial Road, Fulham <br>
-			London, SW6 2AG <br>
-			United Kingdom <br>
+			London,<br>
+			United Kingdom<br>
 		</p>
 		<img src="http://localhost:8888/wp-content/uploads/2016/03/small_menu_logo-1.png">
 	</div>
@@ -38,10 +35,16 @@
 	?>
 	<div id = "splash_wrapper">
 		<div id="splash">
-			<img src="http://localhost:8888/wp-content/uploads/2016/03/computer_illustration.png">
-			<?php the_title();?>
+			<div id="main">
+				<img src="http://localhost:8888/wp-content/uploads/2016/03/computer_illustration.png">
+				<?php the_title();?>
+			</div>
+			<div id="down-arrow">
+				<img src="http://localhost:8888/wp-content/uploads/2016/04/down-arrow-01.png">
+			</div>
 		</div>
 	</div>
+
 
 	<div id = "about_us">
 			<div class = "about_us_head">
@@ -77,6 +80,7 @@
 			</div>
 	</div>
 
+
 	<div id = "portfolio">
 		<h1 id = "section_title">some past work</h1>
 
@@ -94,9 +98,10 @@
 					<div class = "container">
 						<div id="thumbnail"> 
 							
-							<a href="<?php echo get_field("portfolio_link"); ?>" height="450" width="281"target="_blank">
+							<a href="<?php echo get_field("portfolio_link"); ?>" target="_blank">
+							<!-- <a href="<?php echo get_field("portfolio_link"); ?>" height="450" width="281"target="_blank"> -->
 								<?php 
-								//automatically resize tumbnail to 450x281
+								//automatically resize tumbnail to 450x281 by cropping
 							add_image_size('portfolio_thumbnail_size', 450, 281, true);
 							the_post_thumbnail('portfolio_thumbnail_size')
 							?>

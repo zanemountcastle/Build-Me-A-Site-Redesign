@@ -2,6 +2,12 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
     overflow-x: hidden;
+    background-image: url("http://localhost:8888/wp-content/uploads/2016/04/background.png");
+    background-repeat: repeat-y;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
 }
 
 ul {
@@ -51,20 +57,20 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
     margin-top: 55px;
-    margin-bottom: 45px;
+    margin-bottom: 70px;
     display: block;
 }
 
 #menu_footer{
     font-weight: 300;
-    font-size: 8pt;
+    font-size: 9pt;
     color: #888;
     display: block;
     margin-top: 50%;
     position: absolute;
     text-align: center;
     bottom: 40px;
-    left:85px;
+    left:100px;
 }
 
 #menu_footer img{
@@ -97,7 +103,7 @@ a:hover{
     margin-left: 350px;
     margin-right: 50px;
     height: auto;
-    background: #fff;
+    /*background: #fff;*/
     color: black;
     display: inline-block;
     padding-left: 5%
@@ -107,8 +113,7 @@ a:hover{
 .footer{
     background-color: #262c3a;
     width: 100%-300px;
-    float: i/*
-    margin-left: 300px;*/
+    margin-left: 300px;
     height: auto;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -128,22 +133,34 @@ a:hover{
     border-bottom: 5px solid #00DDD8;
 }
 
-#splash{
-    min-height: 85vh;
+#splash #main{
+    /*min-height: 85vh;*/
     padding-top:15vh;
     text-align: center;
     font-weight: 500;
     font-size: 30pt;
     color: #00DDD8;
+    padding-bottom: 20%;
 }
 
-#splash img{
+#splash #main img{
     height: auto;
     width: 65%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
     display: block;
+}
+
+#splash #down-arrow img{
+	display: block;
+	position: absolute;
+	top: 70%;
+	left: 54%;
+	margin-left: auto;
+    margin-right: auto;
+	max-height: 175px;
+	max-width: 175px;
 }
 
 #about_us{
@@ -354,6 +371,15 @@ a:hover{
   -moz-animation: cd-bounce-in ease-out 0.4s;
   animation: cd-bounce-in ease-out 0.4s;
 }
+/*
+.illustrations{
+	position: absolute;
+}
+
+.illustrations #notebook{
+	top: 600px;
+	left: 250px;
+}*/
 
 
 @media (max-width: 1200px){
@@ -374,9 +400,10 @@ a:hover{
         display: block;
     }
 
+
     .menu{
         width: 100%;
-        min-width: 650px;
+        min-width: 600px;
         height: 120px;
         background-color: #262c3a;
         position: fixed;
@@ -405,17 +432,46 @@ a:hover{
         position: relative;
     }
 
+    #splash #main{
+    	padding-bottom: 0px;
+    }
+
+    #splash{
+	    padding-top:10%;
+	    padding-bottom: 0;
+	}
+
     #quote_button{
         display: none;
     }
 
     .menu .get_a_quote{
     	display: inherit;
+    	margin: 10px;
+	    font-size: 14pt;
+    	padding: 6px;
+	    border: 4px solid white;
     }
+
+	.footer{
+	    margin-left: 0;
+	}
+
+    #splash #main{
+    	padding-top: 0;
+    }
+
+    #splash #down-arrow img{
+		display: none;
+	}
 
     .content{
         padding-top: 100px;
     }
+
+    #about_us{
+    	padding-top: 0px;
+	}
 
     #menu_footer{
         display: none;
@@ -509,8 +565,79 @@ a:hover{
 }
 
 @media (max-height: 650px){
-    #menu_footer{
+    #menu_footer, #splash #down-arrow{
         display: none;
     }
 }
 
+@media only screen and (max-device-width: 480px) {
+
+	*{
+		/*max-width: 480px;*/
+	}
+	body{
+		background-image: none;
+	}
+
+	.content{
+		display: inline-block;
+		margin: 0 auto;
+		padding-top: 30%;
+		padding-left: 5%;
+		padding-right: 5%;
+		max-width: 460px;
+		min-width: 300px;
+	}
+	.menu{
+        width: 100%;
+        height: 60px;
+        position: absolute;
+    }
+
+    .menu .buttons{
+    	display: none;
+    }
+
+    .menu img{
+        height: 40px;
+        width: auto;
+        margin-left: 20px;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #splash{
+    	padding-top: 30%;
+    }
+
+    .footer{
+    	display: none;
+    }
+
+
+    #portfolio .container #thumbnail{
+    	width: auto;
+    	display: inline-block;
+    	margin: 0 auto;
+    	float: none;
+    	padding: 0;
+    }
+
+    #portfolio #thumbnail img{
+    	width: 265px;
+    	height: auto;
+    	padding: 0;
+    	padding-top: 20px;
+    	padding-bottom: 20px;
+    }
+     #portfolio #thumbnail a{
+    	width: 265px;
+    	height: auto;
+    }
+
+    #portfolio .container .post_content h2,
+    #portfolio .container .post_content p{
+    	text-align: center;
+    }
+}
