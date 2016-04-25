@@ -305,21 +305,29 @@ a:hover{
 	height: auto;
 }
 
+
+.recommended h2{
+	margin: 5px;
+	padding:0;
+	margin-bottom: 0;
+}
 .recommended a, .recommened h3{
 	display: inline-block;
 	font-size: 14pt;
 	text-align: center;
 	margin-top: 5px;
-	margin-bottom: 5px;
 	padding: 0;
+	margin-bottom: 20px;
 }
 
 .recommended .previous_post{
 	float: left;
+	max-width: 45%;
 }
 
 .recommended .next_post{
 	float: right;
+	max-width: 45%;
 }
 
 #blog h2{

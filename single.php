@@ -36,10 +36,11 @@
 			<?php endwhile; ?>
 			<?php endif; ?>
 		</div>
-	
+		
 		<div class="recommended">
-			<h3 class="previous_post"><?php previous_post_link(); ?></h3>
-			<h3 class="next_post"><?php next_post_link(); ?></h3>
+		<h2>related posts</h2>
+			<h3 class="previous_post"><?php previous_post_link('%link', '%title', true); ?></h3>
+			<h3 class="next_post"><?php next_post_link('%link', '%title', true); ?></h3>
 		</div>
 	</div>
 
