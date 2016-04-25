@@ -33,6 +33,7 @@
 		while(have_posts()) : the_post();
 		endwhile; 
 	?>
+
 	<div id = "splash_wrapper">
 		<div id="splash">
 			<div id="main">
@@ -87,7 +88,8 @@
 		<?php 
 			$args = array(
 					"post_type" => "post",
-					"numberposts" => -1
+					"numberposts" => -1,
+					"category_name" => "portfolio"
 				);
 
 			$the_query = new WP_Query( $args );

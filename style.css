@@ -103,7 +103,6 @@ a:hover{
     margin-left: 350px;
     margin-right: 50px;
     height: auto;
-    /*background: #fff;*/
     color: black;
     display: inline-block;
     padding-left: 5%
@@ -133,14 +132,34 @@ a:hover{
     border-bottom: 5px solid #00DDD8;
 }
 
+.blog-button{
+	display: block;
+	position: relative; 
+	color: #262c3a;
+    width:50px; 
+    float: right;
+    margin-top: 40px;
+    margin-right: 25px;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 6px;
+    border: 4px solid #262c3a;
+    text-align:center;
+}
+
 #splash #main{
-    /*min-height: 85vh;*/
     padding-top:15vh;
     text-align: center;
     font-weight: 500;
     font-size: 30pt;
     color: #00DDD8;
     padding-bottom: 20%;
+}
+
+#splash #blog{
+	padding-top: 50px;
+	padding-bottom: 30px;
+	text-align: center;
 }
 
 #splash #main img{
@@ -246,6 +265,80 @@ a:hover{
     float: left;
     padding-right: 10%;
 }
+
+#blog{
+    padding-top: 0;
+    padding-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#blog .container{
+    width: 80%;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 auto;
+}
+/*
+#blog p{
+    text-align: left;
+}*/
+
+#single-post{
+	width: 80%;
+	display: block;
+	margin: 40px auto;
+}
+
+#single-post h2{
+ 	text-align: center;
+    color: #517398;
+	padding-top: 30px;
+	font-size: 20pt;
+}
+
+
+#single-post img{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.recommended a, .recommened h3{
+	display: inline-block;
+	font-size: 14pt;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+.recommended .previous_post{
+	float: left;
+}
+
+.recommended .next_post{
+	float: right;
+}
+
+#blog h2{
+    text-align: left;
+    color: #517398;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#blog .container #thumbnail {
+	width: 450px; /* fixed width of post image */
+	height: auto;
+    float: left;
+    padding-right: 10%;
+}
+
+
 
 
 #FAQ{
@@ -516,6 +609,13 @@ a:hover{
         margin-right: 0;
     }
 
+    #blog{
+        min-width: 600px
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .about_us_body .text{
         float:left;
         padding: 6px;
@@ -638,6 +738,31 @@ a:hover{
 
     #portfolio .container .post_content h2,
     #portfolio .container .post_content p{
+    	text-align: center;
+    }
+
+    #blog .container #thumbnail{
+    	width: auto;
+    	display: inline-block;
+    	margin: 0 auto;
+    	float: none;
+    	padding: 0;
+    }
+
+    #blog #thumbnail img{
+    	width: 265px;
+    	height: auto;
+    	padding: 0;
+    	padding-top: 20px;
+    	padding-bottom: 20px;
+    }
+    #blog #thumbnail a{
+    	width: 265px;
+    	height: auto;
+    }
+
+    #blog .container .post_content h2,
+    #blog .container .post_content p{
     	text-align: center;
     }
 }
