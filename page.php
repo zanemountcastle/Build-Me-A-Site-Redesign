@@ -1,21 +1,21 @@
 <?php get_header(); ?>
 
 <div class="menu">
-	<a href="localhost:8888/#splash">
+	<a href="http://localhost:8888/#splash">
 		<img src="http://localhost:8888/wp-content/uploads/2016/03/build_me_a_site_logo_main.png">
 	</a>
 	<div class="buttons">
 		<ul>
-		  <li><a href = "localhost:8888/#about_us">about us</a></li>
-		  <li><a href = "localhost:8888/#portfolio">portfolio</a></li>
-		  <li><a href = "localhost:8888/#FAQ">FAQ</a></li>
+		  <li><a href = "http://localhost:8888/#about_us">about us</a></li>
+		  <li><a href = "http://localhost:8888/#portfolio">portfolio</a></li>
+		  <li><a href = "http://localhost:8888/#FAQ">FAQ</a></li>
 		  <!-- hidden until screen width = 1000px -->
-		  <li class="get_a_quote"><a href="localhost:8888/#quote_form">get a quote</a>
+		  <li class="get_a_quote"><a href="http://localhost:8888/#quote_form">get a quote</a>
 		</ul>
 	</div>
 	
 	<div id="quote_button">
-		<a href = "localhost:8888/#quote_form">get a quote</a>
+		<a href = "http://localhost:8888/#quote_form">get a quote</a>
 	</div>
 
 	<div id="menu_footer">

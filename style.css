@@ -453,7 +453,7 @@ a:hover{
   border: 1px solid;
 }
 
-.is-active {
+/*.is-active {
   opacity: 0;
   -webkit-transform: translate3d(0, -200%, 0);
   -moz-transform: translate3d(0, -200%, 0);
@@ -471,7 +471,7 @@ a:hover{
   -webkit-animation: cd-bounce-in ease-out 0.4s;
   -moz-animation: cd-bounce-in ease-out 0.4s;
   animation: cd-bounce-in ease-out 0.4s;
-}
+}*/
 /*
 .illustrations{
 	position: absolute;
